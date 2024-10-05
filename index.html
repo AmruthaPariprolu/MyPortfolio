@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrutha Laxmi Pariprolu | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      body {
+        color: #333;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Color Theme */
+      :root {
+        --primary-color: #6C63FF; 
+        --secondary-color: #FFC107;
+        --background-color: #F3F4F6;
+        --text-color: #333;
+      }
+
+      /* Navigation */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: var(--primary-color);
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      /* Section Styling */
+      section {
+        padding: 40px 0;
+        opacity: 0; /* Start as invisible */
+        transform: translateX(-100px); /* Start slightly off screen */
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+      }
+
+      .section-title {
+        font-size: 2em;
+        color: var(--primary-color);
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      /* Home Section */
+      .hero {
+        text-align: center;
+        padding: 80px 0;
+        background-color: var(--primary-color);
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .hero h1 span {
+        font-weight: bold;
+      }
+
+      .hero h2 {
+        font-size: 1.5em;
+        color: var(--secondary-color);
+      }
+
+      /* Animations */
+      .fade-in {
+        opacity: 1; /* Fade in */
+        transform: translateX(0); /* Move to original position */
+      }
+
+      /* About Section */
+      .about img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+
+      /* Resume and Projects */
+      .resume, .projects {
+        background-color: var(--background-color);
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .projects h3 {
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: var(--secondary-color);
+      }
+
+      .project-item {
+        margin-bottom: 20px;
+      }
+
+      /* Contact */
+      .contact-info a {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      footer {
+        background-color: var(--primary-color);
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div><strong>Amrutha Laxmi Pariprolu</strong></div>
+      <div>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+      <h1>Hello, I'm <span>Amrutha Laxmi Pariprolu</span></h1>
+      <h2>AI & ML Enthusiast | Pre-Final Year Student</h2>
+      <p>I'm passionate about learning new technologies and solving real-world problems.</p>
+      <a href="#contact" class="btn btn-primary">Contact Me</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about fade-in">
+          <p>I'm a pre-final year student at JNTUH specializing in Artificial Intelligence and Machine Learning. I love exploring new technologies and finding practical solutions to real-world problems. My aim is to work with skilled professionals, gain new insights, and grow professionally.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+      <div class="container resume fade-in">
+        <h2 class="section-title">Resume</h2>
+        <h3>Education</h3>
+        <p><strong>JNTUH, B.Tech in CSE (AIML)</strong> - CGPA: 8.85/10</p>
+        <p><strong>Narayana Junior College</strong> - Percentage: 98.1%</p>
+
+        <h3>Skills</h3>
+        <ul>
+          <li>Languages: Java, SQL</li>
+          <li>Web Technologies: HTML, CSS, JavaScript, ReactJS</li>
+          <li>Version Control: Git, GitHub</li>
+          <li>Course Work: DSA, OOP, OS, CN, DBMS</li>
+        </ul>
+
+        <h3>Achievements</h3>
+        <p>Top Contributor in <strong>GSSoC '24</strong> - Achieved <strong>59th</strong> position by successfully merging <strong>88</strong> pull requests, accumulating 1,825 points.</p>
+
+        <h3>Leadership</h3>
+        <p>Coding Club Coordinator - Organized coding contests and events for 100+ students, increasing participation by 30%.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects fade-in">
+          <div class="project-item">
+            <h3>YouTube Transcript Summarizer</h3>
+            <p>Tools: NLTK, YouTube API, Hugging Face, Scikit-Learn, HTML, CSS, Python</p>
+            <p><a href="https://github.com/AmruthaPariprolu/YoutubeTranscriptSummarizer" target="_blank">GitHub Link</a></p>
+          </div>
+          <div class="project-item">
+            <h3>Note-Making React App</h3>
+            <p>Tools: HTML, CSS, JavaScript, ReactJS</p>
+            <p><a href="https://github.com/AmruthaPariprolu/NoteMakingReactApp" target="_blank">GitHub Link</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Email: <a href="mailto:pamruthalaxmi@gmail.com">pamruthalaxmi@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/amrutha-pariprolu-b812892a6/" target="_blank">Amrutha Pariprolu</a></p>
+        <p>GitHub: <a href="https://github.com/AmruthaPariprolu" target="_blank">AmruthaPariprolu</a></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Amrutha Laxmi Pariprolu</p>
+    </footer>
+
+    <script>
+      // Left to right animation for sections
+      const sections = document.querySelectorAll('section');
+
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in'); // Trigger fade-in effect
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    </script>
+  </body>
+</html>
